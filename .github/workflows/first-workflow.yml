@@ -38,6 +38,9 @@ jobs:
       run: echo "Step 2 complete!"
 
   job2:
+   # Job 2 will only run after job 1 completes.
+    # Removing this 'needs' section would make the jobs run simultaneously.
+    needs: job1
     runs-on: ubuntu-latest
 
     steps:
