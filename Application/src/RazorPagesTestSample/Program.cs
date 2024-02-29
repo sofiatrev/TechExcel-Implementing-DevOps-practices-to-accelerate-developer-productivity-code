@@ -35,6 +35,8 @@ namespace RazorPagesTestSample
                 }
             }
 
+            // Write a loop from 0 to 10 and print out the numeric value of the iteratior for each loop iteration
+
             host.Run();
         }
 
